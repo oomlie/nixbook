@@ -23,13 +23,16 @@
   # GRUB bootloader settings for silent boot (hides early kernel messages)
   boot.loader.grub.gfxpayloadBios = "keep";
 
-  # Enable the X11 windowing system.
+  # Enable the graphical desktop.
   services.xserver.enable = true;
   hardware.bluetooth.enable = true;
 
-  # Enable the Cinnamon Desktop Environment.
-  services.xserver.displayManager.lightdm.enable = lib.mkDefault true;
-  services.xserver.desktopManager.cinnamon.enable = lib.mkDefault true;
+  # Plasma 6 with its native display manager and Wayland session.
+  services.displayManager.sddm = {
+    enable = lib.mkDefault true;
+    wayland.enable = lib.mkDefault true;
+  };
+  services.desktopManager.plasma6.enable = lib.mkDefault true;
 
   # Enable Printing
   services.printing.enable = true;
@@ -57,9 +60,10 @@
     libnotify
     gawk
     sudo
-    gnome-calculator
-    gnome-calendar
-    gnome-screenshot
+    kdePackages.kcalc
+    kdePackages.konsole
+    kdePackages.merkuro
+    kdePackages.spectacle
     system-config-printer
   ];
 

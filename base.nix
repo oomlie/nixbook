@@ -101,7 +101,7 @@ in
     flatpak
     xdg-desktop-portal
     xdg-desktop-portal-gtk
-    xdg-desktop-portal-gnome
+    kdePackages.xdg-desktop-portal-kde
 
     (makeDesktopItem {
       name = "zoommtg-handler";

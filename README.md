@@ -10,7 +10,7 @@ Advanced users: see caveats below.
 
 The default **nixbook** version:
 - ***32 GB of storage and 4 GB of ram recommended***
-- configured cinnamon desktop (like Linux Mint) and firefox base
+- configured KDE Plasma 6 desktop and Firefox base
 - Chrome, Zoom, and Libreoffice installed by default flathub enabled out of the box.
 - Automatic weekly OS updates with 4 weeks of roll backs
 - Daily flatpak updates
@@ -18,8 +18,10 @@ The default **nixbook** version:
 
 The **nixbook lite** version:
 - ***32 GB of storage and 2 GB of ram recommended***
-- configured cinnamon desktop (like Linux Mint) and firefox base
+- configured KDE Plasma 6 desktop and Firefox base
 - Automatic weekly updates with 2 weeks of roll backs
+
+Both editions currently track NixOS 26.05 and KDE Plasma 6.6.
   
 
 ![Screenshot from 2024-10-22 10-31-24](https://github.com/user-attachments/assets/53fc76ad-5861-46d8-895a-b4be1e1b2816)

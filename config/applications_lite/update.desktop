@@ -2,8 +2,8 @@
 Version=1.0
 Name=Update and Reboot
 Comment=Run update and reboot script
-Exec=gnome-terminal -- /etc/nixbook/update_lite.sh
+Exec=konsole -e /etc/nixbook/update_lite.sh
 Icon=utilities-terminal
-Terminal=true
+Terminal=false
 Type=Application
 Categories=System;Utility;
